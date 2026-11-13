@@ -1,0 +1,24 @@
+# TripCraft Cursor Rules & Coding Standards
+
+## Project Context
+TripCraft is a production-grade full-stack travel planner MVP designed with sustainable tourism in mind. It pairs a high-performance Python FastAPI + SQLite (SQLAlchemy 2.0 + Pydantic v2) backend with a reactive Vue.js 3 (Composition API with `<script setup>`) frontend.
+
+## Architecture Guidelines
+
+### Backend (`/backend/app`)
+- **FastAPI**: Keep routes modular with descriptive status codes, query validation, and comprehensive error handling.
+- **SQLAlchemy 2.0**: Use standard `SessionLocal` with `get_db` generator dependencies. Always close sessions cleanly.
+- **Pydantic v2**: Use `model_dump()` and `from_attributes = True`. Ensure strict type annotations for all payloads.
+- **Eco Advisor**: Preserve the carbon emission constants (train: 0.028, bus: 0.040, electric_car: 0.053, car: 0.170, flight: 0.255 kg CO2/pax-km) and badge awarding logic across endpoints.
+
+### Frontend (`/frontend/src`)
+- **Vue 3 Composition API**: Always use `<script setup>` syntax.
+- **State & Props**: Define explicit props with types and default values. Emit named events with `defineEmits`.
+- **Styling**: Use utility classes (Tailwind CSS) with clear visual hierarchy. Avoid arbitrary magic constants.
+- **API Services**: Centralize Axios network requests in `/services/api.js`. Never write inline `fetch` or `axios` calls directly inside template methods.
+- **User Experience**: Always provide feedback for asynchronous mutations (spinners, toasts, disabled states) and accessible labels (`aria-label`, `<label for="...">`).
+
+## Development Workflow
+1. Start backend: `cd backend && uvicorn app.main:app --reload --port 8000`
+2. Start frontend: `cd frontend && npm run dev`
+3. Always verify database migrations or SQLite table integrity when changing `models.py`.

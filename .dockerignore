@@ -1,0 +1,17 @@
+node_modules
+dist
+build
+.vite
+.git
+.gitignore
+.playwright-cli
+.env
+.env.*
+!.env.example
+*.log
+*.db
+*.sqlite
+*.sqlite3
+venv
+__pycache__
+tripcraft-mvp

@@ -1,0 +1,6 @@
+{
+  "name": "TripCraft",
+  "description": "Smart travel planner MVP with full CRUD trip management and the Eco-Smart Carbon Footprint & Transport Advisor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

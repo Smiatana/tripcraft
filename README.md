@@ -22,7 +22,8 @@ TripCraft is a travel-planning application that helps users organize trips, comp
 ## Screenshots and Video recordings
 
 <img width="1144" height="817" alt="image" src="https://github.com/user-attachments/assets/73f6334d-7540-4511-ad29-b157d87f7557" />
-[Nagranie ekranu_20261115_155841.webm](https://github.com/user-attachments/assets/1c0b1236-7eb1-49d3-8798-97973905f025)
+[video demonstration.webm](https://github.com/user-attachments/assets/34d71ebd-fba3-4820-9fe1-9323fcb94574)
+
 
 ## AI Usage
 

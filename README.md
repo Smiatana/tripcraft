@@ -19,9 +19,14 @@ TripCraft is a travel-planning application that helps users organize trips, comp
 - Google Gemini API for optional AI-assisted planning
 - Browser local storage for trip data when no remote trip backend is configured
 
-## Screenshot
+## Screenshots and Video recordings
 
 <img width="1144" height="817" alt="image" src="https://github.com/user-attachments/assets/73f6334d-7540-4511-ad29-b157d87f7557" />
+[Nagranie ekranu_20261115_155841.webm](https://github.com/user-attachments/assets/1c0b1236-7eb1-49d3-8798-97973905f025)
+
+## AI Usage
+
+This app was built with the help of Gemini 4
 
 ## Run with Docker
 
